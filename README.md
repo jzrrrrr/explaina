@@ -14,3 +14,11 @@ Explaina 默认使用 `google/gemini-2.0-flash-exp:free`，如果您偏好其他
 每按下一次 **Ctrl+2**，即向 OpenRouter 发起一次调用；Explaina 在后台占用您约 60 MB 的内存。
 
 随时随地提问吧！
+
+### Todo
+
+- Installation package
+- More beautify
+- More API Resource
+- Shortcut Key Customize
+- Dialog
