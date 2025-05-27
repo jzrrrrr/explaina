@@ -1,0 +1,39 @@
+﻿<Window x:Class="explaina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:explaina"
+        mc:Ignorable="d"
+        Title="Explaina" Height="300" Width="400"
+        Topmost="True"
+        WindowStyle="None"
+        ResizeMode="CanResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        PreviewMouseRightButtonDown="Window_MouseRightButtonDown"
+        PreviewMouseMove="Window_MouseMove"
+        PreviewMouseRightButtonUp="Window_MouseRightButtonUp">
+    <WindowChrome.WindowChrome> <!-- 窗口圆角 -->
+        <WindowChrome 
+            CaptionHeight="0" 
+            ResizeBorderThickness="15"
+            GlassFrameThickness="0"
+            CornerRadius="8" />
+    </WindowChrome.WindowChrome>
+    
+    <Border Background="Transparent" Margin="10">
+        <Border.Effect> <!-- 阴影 -->
+            <DropShadowEffect BlurRadius="15" ShadowDepth="0" 
+                             Opacity="0.3" Color="Black"/>
+        </Border.Effect>
+        <Border CornerRadius="8" Background="White"> <!-- 控件圆角 -->
+            <Grid>
+                <FlowDocumentScrollViewer x:Name="MarkdownViewer" Margin="10" 
+                                        ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                                        BorderThickness="0" />
+            </Grid>
+        </Border>
+    </Border>
+</Window>
