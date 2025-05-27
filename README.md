@@ -1,5 +1,7 @@
 # 欢迎使用 Explaina ( •̀ ω •́ )✧ 
 
+[](https://raw.githubusercontent.com/jzrrrrr/explaina/refs/heads/main/preview.png)
+
 Explaina 是随时随地调用 LLM 做名词解释的轻量化 Windows 工具。在使用 Explaina 前，请在任务栏托盘内右键点击 Explaina 图标，选择设置，填入您可用的 OpenRouter API Key；
 
 使用 Explaina，您可以
